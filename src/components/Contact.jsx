@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 function Contact() {
     const { register,
         handleSubmit,
+        reset,
          formState: 
          { errors } } = useForm();
          const onSubmit = 
@@ -20,6 +21,7 @@ function Contact() {
             try {
                 await axios.post("https://getform.io/f/bdrnyqnb", userInfo);
                 toast.success("your message has been sent");
+                reset();
             }  catch(error) {
                 toast.error("something went wrong");
             }
