@@ -27,7 +27,7 @@ function Contact() {
   return (
     <>
     <div name="Contact" className = "max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
-        <h1 className="text-3xl font-semibold mb-4">Contact me</h1>
+        <h1 className="text-4xl text-pink-700 font-semibold mb-4">Contact me</h1>
         <span>Please fill the form to contact me</span>
         <div className='flex flex-col items-center justify-center mt-5'>
             <form onSubmit={handleSubmit(onSubmit)}

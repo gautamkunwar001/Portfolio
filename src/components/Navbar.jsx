@@ -17,11 +17,11 @@ function Navbar() {
         },
         {
             id: 3,
-            text:"Portfolio"
+            text:"Skills"
         },
         {
             id:4,
-            text:"Experience"
+            text:"Projects"
         },
         {
             id:5,
@@ -43,7 +43,7 @@ function Navbar() {
                 <ul className="hidden md:flex space-x-8">
                {
                 navItems.map(({ id, text }) => (
-                    <li className="hover:scale-105 duration-200 cursor-pointer"
+                    <li className="hover:scale-170 duration-200 cursor-pointer"
                      key={id}>
                         <Link to={text}
                         smooth={true}
